@@ -180,6 +180,35 @@ export const DATA = {
       image: "/penned.png",
       video: "",
     },
+    {
+      title: "NSU | Ratna RajyaLaxmi Campus",
+      href: "https://binodrajjoshi.com",
+      dates: "August 2024 -  September 2024",
+      active: true,
+      description:
+        "Developed a NSU Manifesto page for NSU at Ratna RajyaLaxmi Campus.",
+      technologies: [
+        "React.js",
+        "Typescript",
+        "Framer Motion",
+        "CSS",
+        "TailwindCSS",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://binodrajjoshi.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/aviralale/nsu-manifesto-rr",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/nsu.png",
+      video: "",
+    },
   ],
   hackathons: [
     {
