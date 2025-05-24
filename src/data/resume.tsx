@@ -130,7 +130,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "https://api.ctrlbits.xyz/media/projects/Screenshot_4-5-2025_20211_hisaabplus.ctrlbits.xyz.jpeg",
+      image: "/Screenshot 2025-05-24 at 16-50-28 Dashboard Hisaab Plus.png",
       video: "",
     },
     {
