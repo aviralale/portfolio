@@ -104,6 +104,36 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Hisaab Plus",
+      href: "https://hisaabplus.ctrlbits.xyz",
+      dates: "March 2025 - May 2025",
+      active: true,
+      description: "Inventory Management Simplified.",
+      technologies: [
+        "React.js",
+        "Typescript",
+        "MySQL",
+        "TailwindCSS",
+        "Django",
+        "djoser",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://hisaabplus.ctrlbits.xyz",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/aviralale?tab=repositories&q=hisaabplus&type=&language=&sort=",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "https://api.ctrlbits.xyz/media/projects/Screenshot_4-5-2025_20211_hisaabplus.ctrlbits.xyz.jpeg",
+      video: "",
+    },
+    {
       title: "gglamorous",
       href: "https://gglamorous.com",
       dates: "Sept 2024 - Oct 2024",
