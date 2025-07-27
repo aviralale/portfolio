@@ -13,20 +13,24 @@ export const DATA = {
     "Currently a student [pursuing degree in Bachelors in Science, Computer Science and Information Technology](/#education), and [competed in hackathons for fun](/#hackathons).",
   avatarUrl: "/pfp.png",
   skills: [
-    "React",
-    "Next.js",
+    "Javascript",
     "Typescript",
+    "React.js",
+    "Next.js",
+    "React Native",
+    "Tailwind",
     "Django",
     "Python",
+    "SQL",
     "PostgreSQL",
     "MySQL",
-    "SQL",
+    "Git",
+    "VPS",
+    "cPanel",
+    "Linux",
     "C",
     "Sass",
     "C++",
-    "Tailwind",
-    "Javascript",
-    "Git",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -45,7 +49,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://linkedin.com/in/aviral-ale",
+        url: "https://linkedin.com/in/aviralale",
         icon: Icons.linkedin,
 
         navbar: true,
@@ -57,15 +61,58 @@ export const DATA = {
 
         navbar: true,
       },
-      email: {
+      Email: {
         name: "Send Email",
         url: "mailto:aviralale@gmail.com",
         icon: Icons.email,
 
-        navbar: false,
+        navbar: true,
       },
     },
   },
+
+  experience: [
+    {
+      company: "Digically / Firststep Overseas",
+      href: "https://digically.in",
+      role: "Full-stack Developer",
+      logoUrl: "/digically.png",
+      start: "Jul 2025",
+      end: "Present",
+    },
+    {
+      company: "Sabitri Foundation",
+      href: "https://sabitrifoundation.org",
+      role: "Full-stack Developer",
+      logoUrl: "https://www.sabitrifoundation.org/img/images/Logo.svg",
+      start: "Apr 2025",
+      end: "Jun 2025",
+    },
+    {
+      company: "CtrlBits",
+      href: "https://ctrlbits.xyz",
+      role: "Full-stack Developer",
+      logoUrl: "https://ctrlbits.xyz/logo.png",
+      start: "Feb 2025",
+      end: "Present",
+    },
+    {
+      company: "Gglamorous",
+      href: "https://gglamorous.com",
+      role: "Full-stack developer",
+      logoUrl: "https://gglamorous.com/assets/logo-CTwv0n0M.png",
+      start: "Aug 2024",
+      end: "Dec 2024",
+    },
+    {
+      company: "Karnali Yaks Restaurant & Bar",
+      href: "https://karnaliyaksrestaurant.com",
+      role: "Full-stack developer",
+      logoUrl: "https://karnaliyaksrestaurant.com/assets/logo-C-fhSd1S.svg",
+      start: "Mar 2024",
+      end: "Dec 2023",
+    },
+  ],
 
   education: [
     {
