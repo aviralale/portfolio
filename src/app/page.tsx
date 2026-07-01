@@ -11,9 +11,50 @@ import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: DATA.name,
+  url: DATA.url,
+  image: `${DATA.url}${DATA.avatarUrl}`,
+  jobTitle: "Full-stack Developer",
+  description: DATA.description,
+  email: DATA.contact.email,
+  worksFor: {
+    "@type": "Organization",
+    name: "Ctrl Bits",
+    url: "https://ctrlbits.com",
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Kathmandu",
+    addressCountry: "Nepal",
+  },
+  sameAs: [
+    DATA.contact.social.GitHub.url,
+    DATA.contact.social.LinkedIn.url,
+    DATA.contact.social.Instagram.url,
+  ],
+  knowsAbout: [
+    "React",
+    "Next.js",
+    "React Native",
+    "Django",
+    "Python",
+    "TypeScript",
+    "Tailwind CSS",
+    "PostgreSQL",
+  ],
+};
+
 export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
@@ -118,12 +159,12 @@ export default function Page() {
                   My Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my latest work
+                  Things I&apos;ve actually shipped
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
-                  favorites.
+                  From quick landing pages to full web apps with dashboards,
+                  auth and payments. Here are the ones I&apos;m not embarrassed
+                  to show.
                 </p>
               </div>
             </div>
@@ -162,12 +203,11 @@ export default function Page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
-                  {DATA.hackathons.length}+ hackathons. People from around the
-                  country would come together and build incredible things in 2-3
-                  days. It was eye-opening to see the endless possibilities
-                  brought to life by a group of motivated and passionate
-                  individuals.
+                  {DATA.hackathons.length}+ hackathons across university.
+                  Strangers from all over the country, 2&ndash;3 days, way too
+                  much caffeine &mdash; and somehow real, working things came out
+                  the other end. Still the fastest I&apos;ve ever learned
+                  anything.
                 </p>
               </div>
             </div>
@@ -204,15 +244,16 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
+                Got something worth building &mdash; or just want to argue about
+                frameworks? Slide into my{" "}
                 <Link
                   href={DATA.contact.social.Instagram.url}
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct question on instagram
+                  Instagram DMs
                 </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                with an actual question and I&apos;ll reply when I can. Sales
+                pitches get ignored.
               </p>
             </div>
           </BlurFade>
