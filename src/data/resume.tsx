@@ -78,6 +78,14 @@ export const DATA = {
   },
 
   experience: [
+        {
+      company: "Skill Spark",
+      href: "https://www.skillspark.com.np/",
+      role: "Tutor",
+      logoUrl: "https://www.skillspark.com.np/favicon.ico?favicon.6bbb5435.ico",
+      start: "Aug 2026",
+      end: "Present",
+    },
     {
       company: "Nextteen Media",
       href: "https://instagram.com/nextteenmedia",
